@@ -14,9 +14,10 @@ import javax.ws.rs.QueryParam;
 
 
 @Path("/Admin")
+
 public class Admin {
 	
-	
+	Services serivce = new Services() ; 
 	private static Map<String, String>  memoire = new HashMap<>();
 	@GET
 	public Map<String, String> getValue() {
@@ -50,7 +51,7 @@ public class Admin {
 	
 	@DELETE
 	@Path("DirecteurGenerale/delete/{id}")
-	public String deleteDirecteur(@QueryParam("id") String id){
+	public DG deleteDirecteur(@QueryParam("id") String id){
 		return service.deleteDirecteur(id);
 	}
 }

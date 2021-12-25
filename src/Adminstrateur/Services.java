@@ -23,8 +23,7 @@ public static Map<String, DG> Directeur = Memoire.getDG();
 		return c; 
 	}
 
-	public String deleteDirecteur(String id){
-		DG c = Directeur.remove(id);
-		return c.getIdentifiant()+" a ete supprimer";
+	public DG deleteDirecteur(String id){
+		return Directeur.remove(id);
 	}
 }
