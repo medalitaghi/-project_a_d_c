@@ -17,10 +17,11 @@ public static Map<String, DG> Directeur = Memoire.getDG();
 	public List<DG> allDirection() {
 		return new ArrayList<DG>(Directeur.values());
 	}
+	// medali taghi
 
 	public DG getDirecteur(String id){
 		DG c = Directeur.get(id);
-		return c; 
+		return c ; 
 	}
 
 	public DG deleteDirecteur(String id){
