@@ -11,8 +11,8 @@ public class Database {
 	private static Map<Long, Admin> admins = new HashMap<>();
 	
 	public static Map<Long, Directeur> getDirecteurs(){
-		directeurs.put(1L, new Directeur(1,"mohamed","ali", "2000"));
-		directeurs.put(2L, new Directeur(2,"beye","melianine","1000"));
+		directeurs.put(1L, new Directeur(1,"mohamed","ali", "2000","medali@gmail.com","1234"));
+		directeurs.put(2L, new Directeur(2,"beye","melianine","1000","bey@gmail.com","1234"));
 		return directeurs;
 	}
 	

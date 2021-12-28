@@ -9,7 +9,6 @@ public class Admin {
 	public Admin(){
 		
 	}
-	
 	public Admin(long id, String username, String password){
 		this.id=id;
 		this.username=username;
@@ -34,5 +33,4 @@ public class Admin {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 }

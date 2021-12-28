@@ -2,16 +2,19 @@ package Directions;
 
 public class Caissier {
 	
-	private int id;
+	private long id;
 	private String name;
 	private String prenom;
 	
+	public Caissier(){
+		
+	}
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
