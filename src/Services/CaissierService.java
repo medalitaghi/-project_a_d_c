@@ -6,13 +6,13 @@ import java.util.Map;
 
 import Memoire.Database;
 import Directions.Caissier;
+import Directions.Magasin;
 //import com.banque.model.Transfer;
 public class CaissierService {
-	
+	Magasin magasin = new Magasin() ; 
 private Map<Long, Caissier> caissiers = Database.getCaissier();
 	
 	public CaissierService(){
-
 	}
 	
 	public List<Caissier> getCaissiers(){

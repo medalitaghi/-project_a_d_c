@@ -37,6 +37,7 @@ private Map<Long, Admin> admins = Database.getAdmin();
 	}
 	
 	public Admin deleteAdmin(long id){
+		
 		return admins.remove(id);
 	}
 	
