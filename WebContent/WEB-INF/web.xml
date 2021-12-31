@@ -21,4 +21,14 @@
     <servlet-name>jersey-serlvet</servlet-name>
     <url-pattern>/ws-rest/*</url-pattern>
   </servlet-mapping>
+  
+	<filter>
+		<filter-name>Admin</filter-name>
+		<filter-class>Filter.AdminAuthenticate</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>Admin</filter-name>
+		<url-pattern>/ws-rest/Admin/*</url-pattern>
+	</filter-mapping>
+  
 </web-app>
