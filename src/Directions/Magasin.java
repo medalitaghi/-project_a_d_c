@@ -27,6 +27,4 @@ public class Magasin {
 	public void setProduit(Produit produit) {
 		this.produit = produit;
 	}
-	
-
 }

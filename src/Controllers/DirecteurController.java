@@ -18,37 +18,7 @@ public class DirecteurController {
 	
 	DirecteurService directeurservice = new DirecteurService() ; 
 	CaissierService caissierservice = new CaissierService() ; 
-	
-	@GET
-	@Path("/list")
-	public List<Directeur> getDirecteurs(){
-		return directeurservice.getDirecteurs();
-	}
-	
-	@GET
-	@Path("/{id}")
-	public Directeur getDirecteur(@PathParam("id") long id){
-		return directeurservice.getDirecteur(id);
-	}
-	
-	@PUT
-	@Path("/add")
-	public Directeur addDirecteur(Directeur directeur){
-		directeurservice.addDirecteur(directeur);
-		return directeur;
-	}
-	
-	@POST
-	@Path("/update")
-	public Directeur updateDirecteur(Directeur directeur){
-		return directeurservice.updateDirecteur(directeur);
-	}
 
-	@DELETE
-	@Path("/delete/{id}")
-	public Directeur deleteDirecteur(@PathParam("id") long id){
-		return directeurservice.deleteDirecteur(id);
-	}
 	
 	
 	//caissier 

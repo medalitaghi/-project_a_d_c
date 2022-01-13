@@ -10,6 +10,7 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 
@@ -55,6 +56,12 @@ public class AdminController {
 	@Path("/delete/{id}")
 	public Admin deleteAdmin(@PathParam("id") long id){
 		return adminService.deleteAdmin(id);
+	}
+	
+	@GET
+	@Path("/{id}/chpass")
+	public String changePassword(@PathParam("id") long id,@QueryParam("oldpass") String oldpass,@QueryParam("newpass") String newpass){
+		return adminService.changePassowrd(id,oldpass,newpass);
 	}
 	
 	//Directeur

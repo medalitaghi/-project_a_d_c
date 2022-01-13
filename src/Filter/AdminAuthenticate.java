@@ -19,10 +19,9 @@ import javax.servlet.http.HttpServletRequest;
 import Services.AdminService;
 import com.sun.jersey.core.util.Base64;
 
-@WebFilter("/service/Admin/*")
+@WebFilter("/ws-rest/Admin/*")
 public class AdminAuthenticate implements Filter{
 	
-
 	@Override
 	public void destroy() {
 		// TODO Auto-generated method stub
@@ -50,7 +49,6 @@ public class AdminAuthenticate implements Filter{
 			}
 		}
  
-
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.print("Vous n'avez pas l'acces");

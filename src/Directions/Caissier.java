@@ -5,7 +5,7 @@ public class Caissier {
 	private long id;
 	private String nom;
 	private String prenom;
-	private Magasin magasin ;
+	private Magasin magasin;
 	
 	public Caissier(){
 		

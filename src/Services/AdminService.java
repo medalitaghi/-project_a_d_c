@@ -49,5 +49,31 @@ private Map<Long, Admin> admins = Database.getAdmin();
 	    }
 		return false;
 	}
+	
+	public String changePassowrd(long id,String oldpass,String newpass){
+		Admin admin  = getAdmin(id) ;
+		String adminpass =  admin.getPassword(); 
+		if(adminpass.equals(oldpass)){
+			 deleteAdmin(id); 
+			 admin.setPassword(newpass);
+			 addAdmin(admin); 
+			 return "le mots de pass"+adminpass+" est change a " +newpass ; 
+		 }
+		return "le mots de pass "+admin.getPassword()+" est n'est pas changer " ; 
+     
+	}
+	
+//	public Admin changePassowrd(long id,String oldpass,String newpass){
+//		Admin admin  = getAdmin(id) ;
+//		String adminpass =  admin.getPassword(); 
+//		 if(adminpass == oldpass){
+//			 deleteAdmin(id); 
+//			 admin.setPassword(newpass);
+//			 return addAdmin(admin); 
+//		 }
+//			return admin; 
+//		
+//  
+//	}
 
 }

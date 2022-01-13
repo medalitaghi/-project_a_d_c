@@ -37,21 +37,6 @@ public class DirecteurService {
 		return directeur;
 	}
 	
-//	public Response versement(int id,double amount){
-//		Account account = getAccount(id);
-//		account.setBalance(directeur.getBalance()+amount);
-//		return Response.ok(directeur, MediaType.APPLICATION_JSON).entity("Versement "+amount+" succes").build();
-//	}
-//	
-//	public Response retrait(int id,double amount){
-//		Account account = getAccount(id);
-//		if(account.getBalance()<amount){
-//			return Response.status(Response.Status.BAD_REQUEST).entity("Retrait non accept�, Solde insuffisant").build();
-//		}
-//		account.setBalance(account.getBalance()-amount);
-//		return Response.ok(account, MediaType.APPLICATION_JSON).entity("Retrait "+amount+" succes").build();
-//	}
-	
 	public Directeur deleteDirecteur(long id){
 		return directeurs.remove(id);
 	}

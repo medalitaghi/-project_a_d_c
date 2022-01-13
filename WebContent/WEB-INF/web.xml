@@ -30,5 +30,4 @@
 		<filter-name>Admin</filter-name>
 		<url-pattern>/ws-rest/Admin/*</url-pattern>
 	</filter-mapping>
-  
 </web-app>

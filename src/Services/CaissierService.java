@@ -7,10 +7,15 @@ import java.util.Map;
 import Memoire.Database;
 import Directions.Caissier;
 import Directions.Magasin;
+import Directions.Produit;
 //import com.banque.model.Transfer;
 public class CaissierService {
 	Magasin magasin = new Magasin() ; 
 private Map<Long, Caissier> caissiers = Database.getCaissier();
+private Map<Long, Magasin> magasins = Database.getMagasin();
+private Map<Long, Produit> produits = Database.getProduit();
+
+
 	
 	public CaissierService(){
 	}
