@@ -5,7 +5,6 @@ public class Caissier {
 	private long id;
 	private String nom;
 	private String prenom;
-	private Magasin magasin;
 	
 	public Caissier(){
 		
@@ -35,19 +34,11 @@ public class Caissier {
 		this.prenom = prenom;
 	}
 
-	public Caissier(int id, String nom, String prenom,Magasin magasin) {
+	public Caissier(int id, String nom, String prenom) {
 		this.id = id;
 		this.nom = nom;
 		this.prenom = prenom;
-		this.magasin= magasin ;
 	}
 
-	public Magasin getMagasin() {
-		return magasin;
-	}
 
-	public void setMgasin(Magasin magasin) {
-		this.magasin = magasin;
-	}
-	
 }

@@ -11,7 +11,6 @@ public class AdminService {
 private Map<Long, Admin> admins = Database.getAdmin();
 	
 	public AdminService(){
-
 	}
 	
 	public List<Admin> getAdmins(){
@@ -60,9 +59,7 @@ private Map<Long, Admin> admins = Database.getAdmin();
 			 return "le mots de pass"+adminpass+" est change a " +newpass ; 
 		 }
 		return "le mots de pass "+admin.getPassword()+" est n'est pas changer " ; 
-     
 	}
-	
 //	public Admin changePassowrd(long id,String oldpass,String newpass){
 //		Admin admin  = getAdmin(id) ;
 //		String adminpass =  admin.getPassword(); 

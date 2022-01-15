@@ -21,8 +21,7 @@ public class DirecteurController {
 
 	
 	
-	//caissier 
-	
+	//caissier
 	@GET
 	@Path("Caissier/list")
 	public List<Caissier> getCaissiers(){

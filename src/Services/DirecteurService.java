@@ -43,7 +43,7 @@ public class DirecteurService {
 	
 	public boolean loginDirecteur(String email, String password){
 		for (Map.Entry<Long, Directeur> account : directeurs.entrySet()) {
-	        if(account.getValue().getEmail().equals(email) && account.getValue().getPass().equals(password)){
+	        if(account.getValue().getUsername().equals(email) && account.getValue().getPassword().equals(password)){
 	        	return true;
 	        }
 	    } 

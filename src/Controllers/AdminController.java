@@ -17,7 +17,7 @@ import javax.ws.rs.core.MediaType;
 import Directions.*;
 import Services.AdminService; 
 import Services.DirecteurService; 
-import Services.CaissierService;; 
+import Services.CaissierService; 
 
 @Path("/Admin")
 @Produces(MediaType.APPLICATION_JSON)
@@ -96,36 +96,7 @@ public class AdminController {
 		public Directeur deleteDirecteur(@PathParam("id") long id){
 			return directeurservice.deleteDirecteur(id);
 		}
-		//Caissier
-				@GET
-				@Path("Caissier/list")
-				public List<Caissier> getCaissiers(){
-					return caissierservice.getCaissiers();
-				}
-				
-				@GET
-				@Path("Caissier/{id}")
-				public Caissier getCaissier(@PathParam("id") long id){
-					return caissierservice.getCaissier(id) ; 
-				}
-				
-				@PUT
-				@Path("Caissier/add")
-				public Caissier addCaissier(Caissier caissier){
-					caissierservice.addCaissier(caissier);
-					return caissier;
-				}
-				
-				@POST
-				@Path("Caissier/update")
-				public Caissier updateCaissier(Caissier caissier){
-					return caissierservice.updateCaissier(caissier);
-				}
-				
-				@DELETE
-				@Path("Caissier/delete/{id}")
-				public Caissier deleteCaissier(@PathParam("id") long id){
-					return caissierservice.deleteCaissier(id);
-				}
-}
+		
+		
 
+}

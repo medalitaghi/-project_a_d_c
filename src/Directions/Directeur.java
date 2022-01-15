@@ -4,23 +4,21 @@ public class Directeur {
 	
 	private long id;
 	private String name;
-	private String prenom;
 	private String salair ;
-	private String email ;
-	private String pass ;
-	
-	
+	private String username ;
+	private String password ;
+	private Magasin magasin ; 
 	public Directeur(){
     	
     }
 
-	public Directeur(int id, String name, String prenom, String salair, String email, String pass) {
+	public Directeur(int id, String name, String salair, String username, String password,Magasin magasin) {
 		this.id = id;
 		this.name = name;
-		this.prenom = prenom;
 		this.salair = salair;
-		this.email = email;
-		this.pass = pass;
+		this.username = username;
+		this.password = password ; 
+		this.magasin = magasin ;
 	}
 
 	public long getId() {
@@ -35,30 +33,36 @@ public class Directeur {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getPrenom() {
-		return prenom;
-	}
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
-	}
+
 	public String getSalair() {
 		return salair;
 	}
 	public void setSalair(String salair) {
 		this.salair = salair;
 	}
-	public String getEmail() {
-		return email;
+	public String getUsername() {
+		return username;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUsername(String username) {
+		this.username = username;
 	}
-	public String getPass() {
-		return pass;
+	
+	public String getPassword() {
+		return password;
 	}
-	public void setPass(String pass) {
-		this.pass = pass;
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
+	public Magasin getMagasin() {
+		return magasin;
+	}
+
+	public void setMagasin(Magasin magasin) {
+		this.magasin = magasin;
+	}
+
+	
 	
 
 }

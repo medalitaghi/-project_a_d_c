@@ -1,9 +1,9 @@
 package Directions;
 
-public class Produit {
-	private long id ;
-	private String nomproduit; 
-	private String prixproduit;
+public class Stock {
+	private long id ; 
+	private String nomproduit ;
+	private String prixproduit ;
 	public long getId() {
 		return id;
 	}
@@ -22,13 +22,13 @@ public class Produit {
 	public void setPrixproduit(String prixproduit) {
 		this.prixproduit = prixproduit;
 	}
-	
-	public Produit() {
+	public Stock() {
 		// TODO Auto-generated constructor stub
 	}
-	public Produit(long id, String nomproduit, String prixproduit) {
+	public Stock(long id, String nomproduit, String prixproduit) {
 		this.id = id;
 		this.nomproduit = nomproduit;
 		this.prixproduit = prixproduit;
-	} 
+	}
 }
+

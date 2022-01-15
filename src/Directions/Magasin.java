@@ -3,28 +3,32 @@ package Directions;
 public class Magasin {
 	
 	private long id ;
-	private Produit produit ;
-	
-	
-	
+	private Stock stock ;
+		
 	public Magasin() {
 		// TODO Auto-generated constructor stub
 	}
-	public Magasin(long id, Produit produit) {
-		this.id = id;
-		this.produit = produit ; 
-	}
-	
+
 	public long getId() {
 		return id;
 	}
+
 	public void setId(long id) {
 		this.id = id;
 	}
-	public Produit getProduit() {
-		return produit;
+
+	public Stock getStock() {
+		return stock;
 	}
-	public void setProduit(Produit produit) {
-		this.produit = produit;
+
+	public void setStock(Stock stock) {
+		this.stock = stock;
 	}
+
+	public Magasin(long id, Stock stock) {
+		this.id = id;
+		this.stock = stock;
+	}
+	
+	
 }
