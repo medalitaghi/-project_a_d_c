@@ -21,7 +21,6 @@ public class DirecteurController {
 
 	
 	
-	//caissier
 	@GET
 	@Path("Caissier/list")
 	public List<Caissier> getCaissiers(){
@@ -52,4 +51,7 @@ public class DirecteurController {
 	public Caissier deleteCaissier(@PathParam("id") long id){
 		return caissierservice.deleteCaissier(id);
 	}
+	
+	
+	
 }
